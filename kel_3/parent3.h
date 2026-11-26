@@ -11,10 +11,12 @@ typedef struct elm_parent3 *adr_parent3;
 
 struct elm_parent3 {
     info_parent3 info;
+    adr_parent3 next;
     List_child3 child;
 };
 
 struct List_parent3 {
+    adr_parent3 first;
 };
 
 void create_list_parent3(List_parent3 &L);

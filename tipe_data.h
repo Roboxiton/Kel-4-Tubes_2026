@@ -22,6 +22,9 @@ struct info_child2{
 
 struct info_parent3{
     string id;
+    string nama_penumpang;
+    string nomor_kursi;
+    string kelas;
 };
 
 struct info_child3{
