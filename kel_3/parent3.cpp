@@ -5,7 +5,14 @@ void create_list_parent3(List_parent3 &L); {
     L.first = NULL;
 }
 adr_parent3 alokasi_parent3(info_parent3 x); {
-
+    adr_parent3 p = new elm_parent3;
+    p->info.nama = x.nama;
+    p->info.id = x.id;
+    p->info.nomor_kursi = x.nomor_kursi;
+    p->info.kelas = x.kelas;
+    p->next = NULL;
+    p->child = NULL;
+    return p;
 }
 
 void insert_last_parent3(List_parent3 &L, adr_parent3 P); {
